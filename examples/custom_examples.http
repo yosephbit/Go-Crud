@@ -1,0 +1,25 @@
+GET http://localhost:8080/person
+
+###
+POST http://localhost:8080/person
+content-type: application/json
+
+{
+    "name": "John",
+    "age": 5,
+    "hobbies": ["Reading"]
+}
+
+###
+DELETE http://localhost:8080/person/ef766bc2-9b0c-4587-af55-6eca69b67e93
+
+###
+PUT http://localhost:8080/person/ef766bc2-9b0c-4587-af55-6eca69b67e93
+content-type: application/json
+
+{
+    "name":"Jack",
+    "age": 22,
+    "hobbies": ["Reading", "Swimming"]
+}
+
